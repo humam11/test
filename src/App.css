@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+body {
+  margin-top: 50px;
+  color: #fff;
+  background: rgb(20 23 24);
+  max-width: 1264px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+ul {
+  border: 0 solid #e5e7eb;
+  width: 100%;
+  padding: 0;
+  margin-top: 25px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  opacity: 0.7;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.d-flex {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-evenly;
+}
+
+button {
+  transition: background 0.3s;
+}
+
+.d-flex > *:first-child {
+  background: none;
+  transition: color 0.3s;
+}
+
+button:hover {
+  background: rgb(0 88 169);
+}
+
+.d-flex > *:first-child:hover {
+  color: rgb(0 132 255);
+}
+
+button,
+a {
+  background-color: rgb(0 132 255);
+  color: rgb(254 254 254);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  width: fit-content;
+  text-decoration: none;
+  align-items: center;
+}
+
+button:disabled {
+  background-color: rgb(164 199 231);
+}
